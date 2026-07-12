@@ -529,6 +529,8 @@ def main():
     print(f"[{now_str}] BMS Ticket Checker — CI mode")
 
     # Parse config
+    print('printing vars')
+    print('url:',CONFIG["url"])
     parsed = parse_bms_url(CONFIG["url"])
     event_code = parsed["event_code"]
     region_slug = parsed["region_slug"]
